@@ -150,8 +150,8 @@ void copy_relevent_files(const fs::path dest, const vector<fs::path>* files_to_c
 						logs_ << err.what() << "\n" << dest.string() + ext.string() << '\n';
 					}
 					//create the filename destination and save location to be used by the functions below:
-					const fs::path save_this = core_path.string() + "\\" + files.filename().string();
-					const fs::path save_at = save_this.string() + "_" + std::to_string(++(*(p_i))) + "_" + std::to_string(time(NULL)) + files.extension().string();
+					//const fs::path save_this = core_path.string() + "\\" + files.filename().string();
+					//const fs::path save_at = save_this.string() + "_" + std::to_string(++(*(p_i))) + "_" + std::to_string(time(NULL)) + files.extension().string();
 					//rename all the files in their new location....after they have been copied, this should be rewritten with Multi-threads.
 					//if (fs::exists(save_this))
 					//{
