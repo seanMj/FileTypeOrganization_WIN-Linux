@@ -11,10 +11,14 @@ Organize a filesystem by file type, makes analysis of a system easier for people
 
 thought something like this could be used to do analysis of a system visually much easier
 
-- enter program name, and a source location (where you wish to look) and the destination (where you wish to save)
-- The Program will go through a directory and collect all file types, and filenames
-- Next the program will create a directories within the destination location and begin to copy files of type T, to that location
-- The Program Ends (program runs relatively fast and without hassle. 
+Running example
+>enter program name, and a source location (where you wish to look) and the destination (where you wish to save)
+
+> The Program will go through a directory and collect all file types, and filenames
+
+> Next the program will create a directories within the destination location and begin to copy files of type T, to that location
+
+> The Program Ends (program runs relatively fast and without hassle. 
 
 To run program in command line: 
 
