@@ -1,8 +1,8 @@
 # FileTypeOrganization_Windows_&_LinuxOS
-File Type (Extension) Organizer, takes files, gets extension type, then places the file of type into folder of type for easier analysis or searching by the user.
+>File Type (Extension) Organizer, takes files, gets extension type, then places a copy of the file, into folder of its type; for easier analysis or searching by the user.
 
-(Runs on Windows And Linux without any changes within Main, just copy main into a project for Visual Studio, wont work otherwise..)
-Organize a filesystem by file type, makes analysis of a system easier for people who need to quickly comb through a system that isn't their own, or people who just want to run a program for fun. 
+[Runs on Windows And Linux without any changes within Main, just copy main into a project for Visual Studio, wont work otherwise..)
+Organize a filesystem by file type, makes analysis of a system easier for people who need to quickly comb through a system that isn't their own, or people who just want to run a program for fun.]
 
     Unlike the StarSaver program, this program will go through a 
     directory of your choice and will organize all the files by file extension type,
@@ -24,20 +24,24 @@ To run program in command line:
 
      FileTypeOrganization <whereToLook> <WhereToSave>
     
-     Where To Look is where you want the program to find the files for searching through.
+     WhereToLook: location of where you want the program to find the files for searching through.
      
-     Where To Look is where the program will save the organized file data. 
+     WhereToSave: location of where the program will save a copy of the he organized files.  
+
 =======================
 
 not really done the way I like to write code, but the reality is, I did it on a whim and It was before starsaver, but it was unwieldy in how I wrote it and adding to this wouldn't be that good of an idea. 
 
 [Warning, will not work in VS Debug mode... idk why yet]
+
 =======================
+
     Compile (linuxOS): 
     clang++ main.cpp -lstdc++fs --std=c++17 -Oz -s -o  FTO
     
     Compile for bugs/testing(LinuxOS):
     clang++ main.cpp -Wshadow -Wall -g  -lstdc++fs --std=c++17 -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG
+
 ========================
 
   >this folder is like the other version but will work instantly in Visual Studio, not faffing about. No changes made to main.cpp just making it easier on the user.
