@@ -29,20 +29,20 @@ not really done the way I like to write code, but the reality is, I did it on a 
 
 [Warning, will not work in VS Debug mode... idk why yet]
 =======================
-    FIXED:: fix hidden file error in Linux (add .erase(0,1) to erase directories naming with a dot; .<extension> in front of name. 
-    FIXED:: Other Bugs related to program structure eg. shadowing parameters, and data types, decltype fixed one bug, so that was really cool
-    
-    Compile: 
+    Compile (linuxOS): 
     clang++ main.cpp -lstdc++fs --std=c++17 -Oz -s -o  FTO
     
-    Compile for bugs:
+    Compile for bugs/testing(LinuxOS):
     clang++ main.cpp -Wshadow -Wall -g  -lstdc++fs --std=c++17 -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG
 ========================
 
->this folder is like the other version but will work instantly in Visual Studio, not faffing about. No changes made to main.cpp just making it easier on the user.
+  >this folder is like the other version but will work instantly in Visual Studio, not faffing about. No changes made to main.cpp just making it easier on the user.
+   
+  >TODO: put up a way to make a few bucks if people want to donate.  
+   
+  >FIXED:: fix hidden file error in Linux (add .erase(0,1) to erase directories naming with a dot; .<extension> in front of name. 
+
+  >FIXED:: Other Bugs related to program structure eg. shadowing parameters, and data types, decltype fixed one bug, so that was really cool
     
-    TODO: fix bug when renaming files to thier new location... such sloppy code... idk i just started writing, didnt think about quality of code this time
-    TODO: FIX...why are so many people using my codes... I didn't expect any of them to have >30 people so fast, meaning if the rate continues, i actually have to start and supporting these projects
-    TODO: put up a way to make a few bucks if people want to donate.  
-   
-   
+  >FIXED:: A Bug when renaming files to thier new location... such sloppy code... idk i just started writing, didnt think about quality of code this time
+  
