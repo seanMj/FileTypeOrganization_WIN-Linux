@@ -1,4 +1,4 @@
-# FileTypeOrganization_Windows
+# FileTypeOrganization_Windows_&_LinuxOS
 File Type (Extension) Organizer, takes files, gets extension type, then places the file of type into folder of type for easier analysis or searching by the user.
 
 (Runs on Windows And Linux without any changes within Main, just copy main into a project for Visual Studio, wont work otherwise..)
