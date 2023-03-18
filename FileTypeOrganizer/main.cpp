@@ -5,7 +5,8 @@
  * CREATED_BY: Sean Jesky ()
  * CREATED_FOR: the dream
  * WHAT_IT_DOES:  This data is saved in users requested location. Segregation and organization of file extension type.
-
+ * WINDOWS WARNING: DOES NOT WORK IN DEBUG MODE
+ * 
  */
 
 #include <filesystem>
@@ -152,10 +153,10 @@ void copy_relevent_files(const fs::path dest, const vector<fs::path>* files_to_c
 					const fs::path save_this = core_path.string() + "\\" + files.filename().string();
 					const fs::path save_at = save_this.string() + "_" + std::to_string(++(*(p_i))) + "_" + std::to_string(time(NULL)) + files.extension().string();
 					//rename all the files in their new location....after they have been copied, this should be rewritten with Multi-threads.
-					if (fs::exists(save_this))
-					{
-						fs::rename(save_this, save_at);
-					}
+					//if (fs::exists(save_this))
+					//{
+					//	fs::rename(save_this, save_at);
+					//}
 				}
 			}    //comp = false;
 		}
