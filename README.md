@@ -44,8 +44,10 @@ not really done the way I like to write code, but the reality is, I did it on a 
 
 ========================
 
-  >this folder is like the other version but will work instantly in Visual Studio, not faffing about. No changes made to main.cpp just making it easier on the user.
-   
+This version of these folders is like the other version, but will work instantly in Visual Studio, without all that faffing about. No changes made to main.cpp just making it easier on the user.
+  
+  >TODO: input/data validation checks for user command line input.
+
   >TODO: put up a way to make a few bucks if people want to donate.  
    
   >FIXED:: fix hidden file error in Linux (add .erase(0,1) to erase directories naming with a dot; .<extension> in front of name. 
